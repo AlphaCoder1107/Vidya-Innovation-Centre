@@ -1,0 +1,8 @@
+name = "vic-events-router"
+main = "worker.js"
+compatibility_date = "2026-03-14"
+
+[vars]
+# Replace after you deploy.
+HIEVENTS_ORIGIN = "https://your-railway-service.up.railway.app"
+LANDING_ORIGIN = "https://your-username.github.io/vic-landing-page"

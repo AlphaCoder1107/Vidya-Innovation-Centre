@@ -2,6 +2,11 @@ name = "vic-events-router"
 main = "worker.js"
 compatibility_date = "2026-03-14"
 
+routes = [
+	{ pattern = "vic.college/*", zone_name = "vic.college" },
+	{ pattern = "www.vic.college/*", zone_name = "vic.college" }
+]
+
 [vars]
 # Replace after you deploy.
 HIEVENTS_ORIGIN = "https://your-railway-service.up.railway.app"

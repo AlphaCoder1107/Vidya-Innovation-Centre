@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIC | Vidya Innovation Centre</title>
+  <meta name="description" content="Official VIC event portal for registration, QR tickets, and gate check-in." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="particles-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav shell">
+      <a href="#home" class="brand">
+        <img src="https://www.vidya.edu.in/images/VU.png" alt="Vidya University" class="brand-logo" />
+        <span class="brand-text">Team VIC</span>
+      </a>
+      <button id="menu-btn" class="menu-btn" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul id="menu" class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero shell">
+      <div class="hero-copy" data-aos="fade-up" data-aos-duration="900">
+        <p class="eyebrow">VIDYA INNOVATION CENTRE</p>
+        <h1 id="hero-title">Register Fast. Get QR. Enter Smart.</h1>
+        <p class="hero-sub">
+          A modern university event platform powered by Team VIC. Students register online, receive QR tickets by email, and pass secure gate check-in in seconds.
+        </p>
+        <div class="hero-cta-row">
+          <a class="btn btn-primary" href="/app">Open Event Portal</a>
+          <a class="btn btn-ghost" href="#flow">How It Works</a>
+        </div>
+      </div>
+      <div class="hero-card-wrap" data-aos="zoom-in" data-aos-duration="1100">
+        <article class="hero-card">
+          <h2>Live Workflow</h2>
+          <ul>
+            <li><i class="fa-solid fa-user-pen"></i> Student registration</li>
+            <li><i class="fa-solid fa-envelope-circle-check"></i> QR sent by Brevo SMTP</li>
+            <li><i class="fa-solid fa-qrcode"></i> Mobile scan at gate</li>
+            <li><i class="fa-solid fa-shield-check"></i> Instant entry validation</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="flow" class="flow shell">
+      <h2 data-aos="fade-up">How The Entry System Works</h2>
+      <div class="flow-grid">
+        <article class="flow-item" data-aos="fade-up" data-aos-delay="0">
+          <span>01</span>
+          <h3>Register</h3>
+          <p>Students complete the event form in Hi.Events.</p>
+        </article>
+        <article class="flow-item" data-aos="fade-up" data-aos-delay="120">
+          <span>02</span>
+          <h3>Receive QR</h3>
+          <p>Brevo delivers a QR-coded ticket to the student email inbox.</p>
+        </article>
+        <article class="flow-item" data-aos="fade-up" data-aos-delay="240">
+          <span>03</span>
+          <h3>Scan & Enter</h3>
+          <p>Security staff scan via phone and get instant grant/deny status.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="events" class="events shell">
+      <div class="section-head" data-aos="fade-right">
+        <h2>Upcoming Events</h2>
+        <a href="/app" class="text-link">View all in portal <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="event-cards">
+        <article class="event-card" data-aos="fade-up">
+          <p class="date">APR 08</p>
+          <h3>Innovation Sprint Summit</h3>
+          <p>High-impact showcase of student innovation tracks and startup prototypes.</p>
+          <a href="/app/e/innovation-sprint-summit">Register <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </article>
+        <article class="event-card" data-aos="fade-up" data-aos-delay="120">
+          <p class="date">APR 22</p>
+          <h3>AI & Product Design Workshop</h3>
+          <p>Hands-on workshop for practical AI workflows, UI systems, and product thinking.</p>
+          <a href="/app/e/ai-product-design-workshop">Register <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </article>
+        <article class="event-card" data-aos="fade-up" data-aos-delay="240">
+          <p class="date">MAY 05</p>
+          <h3>Campus Tech Leadership Forum</h3>
+          <p>Panel sessions with industry speakers on engineering leadership and innovation.</p>
+          <a href="/app/e/campus-tech-leadership-forum">Register <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about shell">
+      <div data-aos="fade-right">
+        <h2>About Team VIC</h2>
+        <p>
+          Vidya Innovation Centre drives a culture of builder-first learning at Vidya University. This event system unifies registration, ticketing, and secure gate operations in one streamlined workflow.
+        </p>
+      </div>
+      <div class="stats" data-aos="fade-left">
+        <article><strong>0₹</strong><span>Base monthly stack cost</span></article>
+        <article><strong>300/day</strong><span>Free Brevo email capacity</span></article>
+        <article><strong>Realtime</strong><span>QR attendance verification</span></article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <img src="https://www.vidya.edu.in/images/VU.png" alt="Vidya University" class="footer-logo" />
+        <p>Team VIC | Vidya University</p>
+      </div>
+      <div>
+        <h4>Quick Access</h4>
+        <a href="/app">Event Dashboard</a>
+        <a href="/app/login">Staff Login</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:events@vidya.edu.in">events@vidya.edu.in</a>
+        <span>Gate support available on event day</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+</html>

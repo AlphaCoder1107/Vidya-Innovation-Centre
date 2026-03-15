@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VIC | Vidya Innovation Centre</title>
   <meta name="description" content="Official VIC event portal for registration, QR tickets, and gate check-in." />
+  <script>
+    (function () {
+      var appHost = "https://vidya-innovation-centre-production.up.railway.app";
+      if (window.location.pathname === "/app" || window.location.pathname.indexOf("/app/") === 0) {
+        var nextPath = window.location.pathname.replace(/^\/app/, "") || "/";
+        window.location.replace(appHost + nextPath + window.location.search + window.location.hash);
+      }
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />

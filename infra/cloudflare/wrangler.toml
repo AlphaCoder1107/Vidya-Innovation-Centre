@@ -9,5 +9,5 @@ routes = [
 
 [vars]
 # Replace after you deploy.
-HIEVENTS_ORIGIN = "https://your-railway-service.up.railway.app"
-LANDING_ORIGIN = "https://your-username.github.io/vic-landing-page"
+HIEVENTS_ORIGIN = "https://vidya-innovation-centre-production.up.railway.app"
+LANDING_ORIGIN = "https://vic.college"
